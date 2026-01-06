@@ -179,8 +179,7 @@ print(sample_features.T)
 
 predictions_df = predict_top_k_crops(model, le, sample_features, k=3)
 
-print(f"\nTop-3 Crop Recommendations:")
-print(predictions_df[['rank', 'predicted_crop', 'probability', 'confidence_pct']])
+
 
 y_train_pred = model.predict(x_train)
 y_test_pred = model.predict(x_test)
