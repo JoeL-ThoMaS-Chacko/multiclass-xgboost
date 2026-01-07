@@ -58,10 +58,6 @@ le = LabelEncoder()
 y_train_encoded = le.fit_transform(y_train)
 y_test_encoded = le.transform(y_test)
 
-print(f"Training set: {x_train.shape}")
-print(f"Testing set: {x_test.shape}")
-print(f"Number of unique crops: {len(le.classes_)}")
-print(f"Crop classes: {le.classes_}")
 
 
 
