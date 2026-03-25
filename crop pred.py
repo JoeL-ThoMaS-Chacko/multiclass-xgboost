@@ -71,8 +71,8 @@ model = xgb.XGBClassifier(
     colsample_bytree=0.8,
     min_child_weight=3,          
     gamma=0.1,                   
-    reg_alpha=0.1,               # L1 regularization
-    reg_lambda=1.0,              # L2 regularization
+    reg_alpha=0.1,               
+    reg_lambda=1.0,              
     eval_metric='mlogloss',      
     random_state=42
 )
